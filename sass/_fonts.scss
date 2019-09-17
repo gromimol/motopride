@@ -1,13 +1,69 @@
 @font-face {
-	font-family: "PTSans";
-	src: url("../font/PTSansRegular.woff") format("woff");
+	font-family: "DinPro";
+	src: url("../font/DINPro-Black.woff") format("woff");
+	font-style: normal;
+	font-weight: 900;
+}
+@font-face {
+	font-family: "DinPro";
+	src: url("../font/DINPro-Bold.woff") format("woff");
+	font-style: normal;
+	font-weight: 700;
+}
+@font-face {
+	font-family: "DinPro";
+	src: url("../font/DINPro-Medium.woff") format("woff");
+	font-style: normal;
+	font-weight: 500;
+}
+@font-face {
+	font-family: "DinPro";
+	src: url("../font/DINPro.woff") format("woff");
 	font-style: normal;
 	font-weight: 400;
 }
 @font-face {
-	font-family: "PTSans";
-	src: url("../font/PTSansBold.woff") format("woff");
+	font-family: "DinPro";
+	src: url("../font/DINPro-Light.woff") format("woff");
+	font-style: normal;
+	font-weight: 300;
+}
+
+@font-face {
+	font-family: "DinProCn";
+	src: url("../font/DINPro-CondensedBlack.woff") format("woff");
+	font-style: normal;
+	font-weight: 900;
+}
+@font-face {
+	font-family: "DinProCn";
+	src: url("../font/DINPro-CondensedBold.woff") format("woff");
 	font-style: normal;
 	font-weight: 700;
+}
+@font-face {
+	font-family: "DinProCn";
+	src: url("../font/DINPro-CondensedMedium.woff2") format("woff");
+	font-style: normal;
+	font-weight: 500;
+}
+@font-face {
+	font-family: "DinProCn";
+	src: url("../font/DINPro-CondensedRegular.woff") format("woff");
+	font-style: normal;
+	font-weight: 400;
+}
+@font-face {
+	font-family: "DinProCn";
+	src: url("../font/DINPro-CondensedLight.woff") format("woff");
+	font-style: normal;
+	font-weight: 300;
+}
+
+@font-face {
+	font-family: "Helvetica";
+	src: url("../font/HelveticaNeueCyr-Roman.woff") format("woff");
+	font-style: normal;
+	font-weight: 400;
 }
 

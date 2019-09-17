@@ -1,0 +1,12 @@
+/*nicescroll*/ 
+.nicescroll-rails{
+	opacity: 1 !important;
+	width: 1px !important;
+	background-color: #fff;
+	transform: translateX(10px);
+}
+.nicescroll-cursors{
+	width: 14px !important;
+	background-color: #000 !important;
+	transform: translateX(50%);
+}

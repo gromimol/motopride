@@ -1,28 +1,41 @@
 :root{
+	--white-light: rgba(255, 255, 255, .3);
 }
 html, body{
 	min-height: 100%;
 }
 html{
-	font-size: 10px;
+	font-size: 16px;
 }
 body{
+	font-family: "DinPro", sans-serif;
+	background-color: #000;
+	color: #fff;
+	height: 100vh;
+	overflow: hidden;
 }
 a{
+	color: #fff;
 	transition: all .2s;
 }
+img{
+	max-width: 100%;
+}
 .wrapper{
-	height: 100%;
-	display: flex;
-	flex-direction: column;
+
 }
 .container{
+	width: 100%;
+	max-width: 1130px;
+	padding: 0 20px;
+	margin: 0 auto;
 }
 .main{
-	flex: 1 0 auto;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
 }
 .footer{
-	flex: 0 0 auto;
 }
 .flex{
 	display: -webkit-flex;
@@ -52,6 +65,51 @@ a{
 	}
 
 }
+
+.page{
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	background:#000 url('../img/page-bg.jpg') left top no-repeat;
+	background-size: cover;
+}
+
+.light{
+	color: var(--white-light);
+}
+
+.btn-container{
+	text-align: center;
+}
+.btn{
+	display: inline-block;
+	font-size: 3em;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #fff;
+	border: 2px solid #ffffff;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+	background-color: rgba(#fff, .3);
+	padding: .625em 2.3em;
+	white-space: nowrap;
+	border-radius: 0;
+	outline: none;
+	appearance: none;
+	cursor: pointer;
+	transition: all .3s;
+	&:hover{
+		background-color: #000;
+	}
+	span{
+		text-transform: lowercase;
+	}
+	&--full{
+		width: 100%;
+		padding: .625em;
+	}
+}
+
+
 
 ::-webkit-input-placeholder {  }
 ::-moz-placeholder          {  } /* Firefox 19+ */
