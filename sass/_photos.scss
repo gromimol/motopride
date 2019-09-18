@@ -47,6 +47,9 @@
 .photo-group__item{
 	padding: 0 .5em;
 	margin-bottom: 1em;
+	a{
+		display: block;
+	}
 	&:hover{
 		img{
 			filter: grayscale(0);
