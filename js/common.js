@@ -1,9 +1,31 @@
 
-// Оптимизация для youtube-видео
-
-
-
 $(document).ready(function () {
+
+	if($(window).width() > 1360){
+		$(".news-list").niceScroll();
+		$(".news-body").niceScroll();
+	}
+
+	 // fullpage customization
+	 if($(window).width() > 1280){
+	 	$('#fullpage').fullpage({
+	 		sectionSelector: '.vertical-scrolling',
+	 		navigation: true,
+	 		slidesNavigation: true,
+	 		css3: true,
+	 		controlArrows: false,
+	 		responsiveWidth: 1280
+	 	});
+	 }
+
+	 $('#fp-nav li:first-child .fp-sr-only').text('');
+	 $('#fp-nav li:nth-child(2) .fp-sr-only').text('о нас');
+	 $('#fp-nav li:nth-child(3) .fp-sr-only').text('новости');
+	 $('#fp-nav li:nth-child(4) .fp-sr-only').text('фото');
+	 $('#fp-nav li:nth-child(5) .fp-sr-only').text('видео');
+	 $('#fp-nav li:nth-child(6) .fp-sr-only').text('контакты');
+
+
 
 	// popup
 	$('.js-popup-link').on('click',function (e) {
@@ -26,33 +48,33 @@ $(document).ready(function () {
 	});
 
 	// click on scroll icon
-	$('.scroll-down').on('click',function (e) {
-		e.preventDefault();
+	// $('.scroll-down').on('click',function (e) {
+	// 	e.preventDefault();
 
-		$('.first-screen').addClass('hidden')
-		$('.pages').addClass('active');
-		$('.page').eq(0).addClass('active');
-	});
+	// 	$('.first-screen').addClass('hidden')
+	// 	$('.pages').addClass('active');
+	// 	$('.page').eq(0).addClass('active');
+	// });
 
-	$('.logo').on('click',function () {
-		$('.first-screen').removeClass('hidden')
-		$('.pages').removeClass('active');
-	});
+	// $('.logo').on('click',function () {
+	// 	$('.first-screen').removeClass('hidden')
+	// 	$('.pages').removeClass('active');
+	// });
 
 	// menu
-	$('.menu').on('click', 'a', function (e) {
-		e.preventDefault();
+	// $('.menu').on('click', 'a', function (e) {
+	// 	e.preventDefault();
 
-		var pageNumber = $(this).attr('data-page');
+	// 	var pageNumber = $(this).attr('data-page');
 
-		$('.menu a').removeClass('active');
-		$(this).addClass('active');
+	// 	$('.menu a').removeClass('active');
+	// 	$(this).addClass('active');
 
-		$('.page.bg').removeClass('bg');
-		$('.page.active').removeClass('active').addClass('bg');	
+	// 	$('.page.bg').removeClass('bg');
+	// 	$('.page.active').removeClass('active').addClass('bg');	
 
-		$('#' + pageNumber).addClass('active');
-	});
+	// 	$('#' + pageNumber).addClass('active');
+	// });
 
 
 	
@@ -77,10 +99,7 @@ $(document).ready(function () {
 		$('.news-photo').attr('src', imgSrc);
 	})
 
-	if($(window).width() > 1360){
-		$(".news-list").niceScroll();
-		$(".news-body").niceScroll();
-	}
+	
 	
 
 	// slider
@@ -157,5 +176,7 @@ $(document).ready(function () {
 		]
 
 	});
+
+
 
 })

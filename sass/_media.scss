@@ -38,7 +38,11 @@
 		width: 100%;
 	}
 	.menu,
-	.scroll-down-container{
+	.scroll-down-container,
+	.news .logo,
+	.photos .logo,
+	.videos .logo,
+	.contacts .logo{
 		display: none;
 	}
 	.pages{
