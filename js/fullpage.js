@@ -134,7 +134,7 @@
             dragAndMove: false,
             offsetSections: false,
             resetSliders: false,
-            fadingEffect: false,
+            fadingEffect: true,
             normalScrollElements: null,
             scrollOverflow: false,
             scrollOverflowReset: false,

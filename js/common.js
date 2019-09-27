@@ -25,7 +25,11 @@ $(document).ready(function () {
 	 $('#fp-nav li:nth-child(5) .fp-sr-only').text('видео');
 	 $('#fp-nav li:nth-child(6) .fp-sr-only').text('контакты');
 
+	 $('.scroll-down').on('click', function (e) {
+	 	e.preventDefault();
 
+	 	$('#fp-nav li:first-child a').trigger('click');
+	 })
 
 	// popup
 	$('.js-popup-link').on('click',function (e) {
@@ -46,36 +50,6 @@ $(document).ready(function () {
 		$('#overlay').removeClass('active');
 		$('.popup').removeClass('active');
 	});
-
-	// click on scroll icon
-	// $('.scroll-down').on('click',function (e) {
-	// 	e.preventDefault();
-
-	// 	$('.first-screen').addClass('hidden')
-	// 	$('.pages').addClass('active');
-	// 	$('.page').eq(0).addClass('active');
-	// });
-
-	// $('.logo').on('click',function () {
-	// 	$('.first-screen').removeClass('hidden')
-	// 	$('.pages').removeClass('active');
-	// });
-
-	// menu
-	// $('.menu').on('click', 'a', function (e) {
-	// 	e.preventDefault();
-
-	// 	var pageNumber = $(this).attr('data-page');
-
-	// 	$('.menu a').removeClass('active');
-	// 	$(this).addClass('active');
-
-	// 	$('.page.bg').removeClass('bg');
-	// 	$('.page.active').removeClass('active').addClass('bg');	
-
-	// 	$('#' + pageNumber).addClass('active');
-	// });
-
 
 	
 
@@ -151,6 +125,7 @@ $(document).ready(function () {
 		]
 
 	});
+
 
 	$('.prev-arrow, .next-arrow').on('click', function(){
 		$("iframe").each(function() {
