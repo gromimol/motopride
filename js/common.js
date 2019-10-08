@@ -14,9 +14,11 @@ $(document).ready(function () {
 	 		slidesNavigation: true,
 	 		css3: true,
 	 		controlArrows: false,
+	 		anchors: ['section1', 'section2', 'section3', 'section4', 'section5', 'section6'],
 	 		responsiveWidth: 1280
 	 	});
-	 }
+	 };
+
 
 	 $('#fp-nav li:first-child .fp-sr-only').text('');
 	 $('#fp-nav li:nth-child(2) .fp-sr-only').text('о нас');
@@ -25,11 +27,6 @@ $(document).ready(function () {
 	 $('#fp-nav li:nth-child(5) .fp-sr-only').text('видео');
 	 $('#fp-nav li:nth-child(6) .fp-sr-only').text('контакты');
 
-	 $('.scroll-down').on('click', function (e) {
-	 	e.preventDefault();
-
-	 	$('#fp-nav li:first-child a').trigger('click');
-	 })
 
 	// popup
 	$('.js-popup-link').on('click',function (e) {
